@@ -33,12 +33,16 @@
 <body>
   <div class="tfjs-example-container">
     <section class='title-area'>
-      <h1>TensorFlow.js: Using a Keras model in the browser</h1>
+      <h1>TensorFlow.js: Recognizing landmarks on Columbia's campus. </h1>
     </section>
 
     <section>
       <p class='section-head'>Description</p>
       <p>
+        The current CNN model is able to recognize four landmarks: <br>
+        Alfred Lerner Hall, Low Memorial Library, Scholars Lion, and The Curl. <br>
+        Upload an image to predict! <br>
+        <br>
         This file is based on <a>https://github.com/tensorflow/tfjs-examples/tree/master/mobilenet</a>.
       </p>
     </section>
@@ -57,7 +61,7 @@
 
       <div id="predictions"></div>
 
-      <img style="display: none" id="cat" src="cat.jpg" width=192 height=192 />
+      <img style="display: none" id="low_memorial" src="low_memorial.jpg" width=300 height=300 />
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>

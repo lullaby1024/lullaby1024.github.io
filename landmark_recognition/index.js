@@ -1,16 +1,15 @@
 CLASSES = {
-  0: 'class0',
-  1: 'class1',
-  2: 'class2',
-  3: 'class3',
-  4: 'class4',
+  0: 'Alfred Lerner Hall',
+  1: 'Low Memorial Library',
+  2: 'Scholars Lion',
+  3: 'The Curl'
 };
 
 const MODEL_PATH =
     'model.json';
 
-const IMAGE_SIZE = 192;
-const TOPK_PREDICTIONS = 5;
+const IMAGE_SIZE = 300;
+const TOPK_PREDICTIONS = 4;
 
 let my_model;
 const demo = async () => {
@@ -25,15 +24,15 @@ const demo = async () => {
 
   status('');
 
-  // Make a prediction through the locally hosted cat.jpg.
-  const catElement = document.getElementById('cat');
-  if (catElement.complete && catElement.naturalHeight !== 0) {
-    predict(catElement);
-    catElement.style.display = '';
+  // Make a prediction through the locally hosted low_memorial.jpg.
+  const libraryElement = document.getElementById('low_memorial');
+  if (libraryElement.complete && libraryElement.naturalHeight !== 0) {
+    predict(libraryElement);
+    libraryElement.style.display = '';
   } else {
-    catElement.onload = () => {
-      predict(catElement);
-      catElement.style.display = '';
+    libraryElement.onload = () => {
+      predict(libraryElement);
+      libraryElement.style.display = '';
     }
   }
 
