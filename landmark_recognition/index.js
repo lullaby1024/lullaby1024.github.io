@@ -6,7 +6,7 @@ CLASSES = {
 };
 
 const MODEL_PATH =
-    'model.json';
+    'https://lullaby1024.github.io/landmark_recognition/model.json';
 
 const IMAGE_SIZE = 300;
 const TOPK_PREDICTIONS = 4;
